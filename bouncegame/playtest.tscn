@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://3i5ulpi715m5"]
+
+[ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
+
+[node name="playtest" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
+
+[node name="normal_peg" parent="normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(-141, -56)
+
+[node name="normal_peg" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(277, -4)
