@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://3i5ulpi715m5"]
+[gd_scene load_steps=3 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
-[ext_resource type="PackedScene" uid="uid://b6vwkbbf2ka3r" path="res://ball.tscn" id="2_e2qus"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 
 [node name="playtest" type="Node2D"]
+position = Vector2(-1, 0)
 
 [node name="cannon" parent="." instance=ExtResource("3_2iy5o")]
-position = Vector2(2, -199)
+position = Vector2(2, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(2, 0)
+position = Vector2(17, 412)
 
 [node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(0, 20)
+position = Vector2(-6, 399)
 
 [node name="normal_peg" parent="normal_peg" instance=ExtResource("1_qjlvb")]
 position = Vector2(-114, 86)
@@ -44,6 +44,3 @@ position = Vector2(111, 46)
 
 [node name="normal_peg4" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
 position = Vector2(60, -156)
-
-[node name="ball" parent="." instance=ExtResource("2_e2qus")]
-position = Vector2(84, -197)
