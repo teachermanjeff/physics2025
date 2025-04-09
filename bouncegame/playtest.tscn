@@ -1,15 +1,46 @@
-[gd_scene load_steps=2 format=3 uid="uid://3i5ulpi715m5"]
+[gd_scene load_steps=3 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
+[ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 
 [node name="playtest" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="cannon" parent="." instance=ExtResource("3_2iy5o")]
+position = Vector2(2, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(17, 412)
 
 [node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
+position = Vector2(-6, 399)
 
 [node name="normal_peg" parent="normal_peg" instance=ExtResource("1_qjlvb")]
-position = Vector2(-141, -56)
+position = Vector2(-114, 86)
 
 [node name="normal_peg" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
-position = Vector2(277, -4)
+position = Vector2(238, -60)
+
+[node name="normal_peg2" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(169, 28)
+
+[node name="normal_peg3" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(85, -15)
+
+[node name="normal_peg4" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(38, -77)
+
+[node name="normal_peg2" parent="normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(-114, 86)
+
+[node name="normal_peg" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(191, -129)
+
+[node name="normal_peg2" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(156, -51)
+
+[node name="normal_peg3" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(111, 46)
+
+[node name="normal_peg4" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(60, -156)

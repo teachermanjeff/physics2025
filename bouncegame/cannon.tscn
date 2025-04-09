@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl0wmqo673iiy"]
+
+[ext_resource type="Script" uid="uid://dapn6e18c07hi" path="res://static_body_2d.gd" id="1_23j6s"]
+[ext_resource type="Texture2D" uid="uid://k2oyqqvuo3lg" path="res://icon.svg" id="2_72ky0"]
+
+[node name="cannon" type="StaticBody2D"]
+script = ExtResource("1_23j6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -2.5)
+rotation = 1.5708
+scale = Vector2(0.234375, 0.210938)
+texture = ExtResource("2_72ky0")
