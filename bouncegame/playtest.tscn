@@ -6,18 +6,44 @@
 
 [node name="playtest" type="Node2D"]
 
+[node name="cannon" parent="." instance=ExtResource("3_2iy5o")]
+position = Vector2(2, -199)
+
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2, 0)
 
 [node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
+position = Vector2(0, 20)
 
 [node name="normal_peg" parent="normal_peg" instance=ExtResource("1_qjlvb")]
-position = Vector2(-144, 54)
+position = Vector2(-114, 86)
 
 [node name="normal_peg" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
-position = Vector2(277, -4)
+position = Vector2(238, -60)
+
+[node name="normal_peg2" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(169, 28)
+
+[node name="normal_peg3" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(85, -15)
+
+[node name="normal_peg4" parent="normal_peg/normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(38, -77)
+
+[node name="normal_peg2" parent="normal_peg" instance=ExtResource("1_qjlvb")]
+position = Vector2(-114, 86)
+
+[node name="normal_peg" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(191, -129)
+
+[node name="normal_peg2" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(156, -51)
+
+[node name="normal_peg3" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(111, 46)
+
+[node name="normal_peg4" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
+position = Vector2(60, -156)
 
 [node name="ball" parent="." instance=ExtResource("2_e2qus")]
-position = Vector2(132, -209)
-
-[node name="StaticBody2D" parent="." instance=ExtResource("3_2iy5o")]
-position = Vector2(1, -190)
+position = Vector2(84, -197)
