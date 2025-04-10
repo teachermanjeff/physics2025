@@ -8,7 +8,7 @@ bounce = 0.77
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_41u45"]
 
-[node name="ball" type="RigidBody2D"]
+[node name="ball" type="RigidBody2D" groups=["balls"]]
 physics_material_override = SubResource("PhysicsMaterial_x8fbi")
 script = ExtResource("1_41u45")
 

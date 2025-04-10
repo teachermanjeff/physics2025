@@ -11,5 +11,10 @@ func _process(delta):
 	pass
 
 func _on_area_2d_body_entered(body):
-	#queue_free()
-	pass
+	if body.is_in_group("balls"):
+		$Timer.start()
+	
+
+
+func _on_timer_timeout():
+	queue_free()

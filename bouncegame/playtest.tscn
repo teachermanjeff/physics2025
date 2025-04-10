@@ -44,3 +44,6 @@ position = Vector2(111, 46)
 
 [node name="normal_peg4" parent="normal_peg/normal_peg2" instance=ExtResource("1_qjlvb")]
 position = Vector2(60, -156)
+
+[node name="normal_peg3" parent="." instance=ExtResource("1_qjlvb")]
+position = Vector2(91, 282)
