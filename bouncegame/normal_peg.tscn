@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://ls1hr0toxf4b" path="res://Graphics/blue man peg.png" id="2_jc5c8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpu75"]
-radius = 10.0499
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vybfs"]
 
@@ -19,6 +18,7 @@ texture = ExtResource("2_jc5c8")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.99, 0.99)
 shape = SubResource("CircleShape2D_rpu75")
 
 [node name="Timer" type="Timer" parent="."]
