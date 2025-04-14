@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmn7jrij4glg6"]
+
+[ext_resource type="Script" uid="uid://biw7cvmitr6f8" path="res://canvas_layer.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_37p78")
+
+[node name="Points" type="Label" parent="."]
+offset_right = 316.0
+offset_bottom = 57.0
+text = "Points: 0"
+
+[node name="balls" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 22.0
+offset_right = 66.0
+offset_bottom = 45.0
+text = "Balls: 10"

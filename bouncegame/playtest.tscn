@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://3i5ulpi715m5"]
+[gd_scene load_steps=4 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
+[ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="3_l4ynd"]
 
 [node name="playtest" type="Node2D"]
 position = Vector2(-1, 0)
@@ -113,3 +114,7 @@ position = Vector2(60, -156)
 
 [node name="normal_peg3" parent="." instance=ExtResource("1_qjlvb")]
 position = Vector2(91, 282)
+
+[node name="HUD" parent="." instance=ExtResource("3_l4ynd")]
+offset = Vector2(-250, -50)
+transform = Transform2D(1, 0, 0, 1, -250, -50)
