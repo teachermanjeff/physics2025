@@ -1,5 +1,6 @@
 extends Node2D
 
+signal addpoint
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,6 +13,7 @@ func _process(delta):
 
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("balls"):
+		emit_signal("addpoint")
 		$Timer.start()
 	
 
