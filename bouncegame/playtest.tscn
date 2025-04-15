@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://3i5ulpi715m5"]
+[gd_scene load_steps=5 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
@@ -48,17 +48,7 @@ position = Vector2(-32, 201)
 [node name="normal_peg10" parent="." instance=ExtResource("1_qjlvb")]
 position = Vector2(42, 202)
 
-[connection signal="addpoint" from="normal_peg" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg2" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg3" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg4" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg5" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg6" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg7" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg8" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg9" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg10" to="HUD" method="_on_normal_peg_addpoint"]
-[node name="normal_peg3" parent="." instance=ExtResource("1_qjlvb")]
+[node name="normal_peg11" parent="." instance=ExtResource("1_qjlvb")]
 position = Vector2(91, 282)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
@@ -73,3 +63,13 @@ shape = SubResource("RectangleShape2D_e2qus")
 position = Vector2(364, 404)
 shape = SubResource("RectangleShape2D_e2qus")
 
+[connection signal="addpoint" from="normal_peg" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg2" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg3" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg4" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg5" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg6" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg7" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg8" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg9" to="HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg10" to="HUD" method="_on_normal_peg_addpoint"]
