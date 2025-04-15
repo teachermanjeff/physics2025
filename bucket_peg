@@ -1,0 +1,21 @@
+extends Node2D
+
+@export var speed: float = 200.0
+@export var basket_width: float = 100.0
+
+
+@export var left_limit: float = -30.0
+@export var right_limit: float = 900.0
+
+var direction := 1
+
+func _process(delta):
+	position.x += speed * delta * direction
+
+ 
+	if position.x + basket_width / 2 > right_limit:
+		position.x = right_limit - basket_width / 2
+		direction = -1
+	elif position.x - basket_width / 2 < left_limit:
+		position.x = left_limit + basket_width / 2
+		direction = 1
