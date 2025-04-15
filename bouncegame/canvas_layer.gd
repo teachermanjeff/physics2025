@@ -4,8 +4,8 @@ var lives = 10
 func _ready():
 	pass
 func _process(delta):
-	if Input.is_action_just_pressed("left click"):
-		lives = lives - 1
+	var bottom_node = get_node("bottom")
+
 	$Points.text = "Points: " + str(score)
 	$balls.text = "Balls " + str(lives)
 
