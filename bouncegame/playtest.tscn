@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://3i5ulpi715m5"]
+
+[gd_scene load_steps=6 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="3_l4ynd"]
+[ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="4_l4ynd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
@@ -13,10 +15,10 @@ position = Vector2(-1, 0)
 [node name="cannon" parent="." instance=ExtResource("3_2iy5o")]
 position = Vector2(2, 1)
 
+[node name="HUD" parent="cannon" instance=ExtResource("3_l4ynd")]
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(17, 412)
-
-[node name="HUD" parent="." instance=ExtResource("3_l4ynd")]
 
 [node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
 position = Vector2(-75, 326)
@@ -63,13 +65,17 @@ shape = SubResource("RectangleShape2D_e2qus")
 position = Vector2(364, 404)
 shape = SubResource("RectangleShape2D_e2qus")
 
-[connection signal="addpoint" from="normal_peg" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg2" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg3" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg4" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg5" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg6" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg7" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg8" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg9" to="HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg10" to="HUD" method="_on_normal_peg_addpoint"]
+[node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
+position = Vector2(-400, 464)
+
+[connection signal="addpoint" from="normal_peg" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg2" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg3" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg4" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg5" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg6" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg7" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg8" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg9" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+[connection signal="addpoint" from="normal_peg10" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+
