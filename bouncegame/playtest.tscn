@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=6 format=3 uid="uid://3i5ulpi715m5"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
@@ -77,3 +78,4 @@ position = Vector2(-400, 464)
 [connection signal="addpoint" from="normal_peg8" to="cannon/HUD" method="_on_normal_peg_addpoint"]
 [connection signal="addpoint" from="normal_peg9" to="cannon/HUD" method="_on_normal_peg_addpoint"]
 [connection signal="addpoint" from="normal_peg10" to="cannon/HUD" method="_on_normal_peg_addpoint"]
+
