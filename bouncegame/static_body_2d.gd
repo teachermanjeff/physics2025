@@ -10,6 +10,7 @@ func _process(delta):
 		get_parent().add_child(new_projectile)
 		HUD_node.lives -= 1
 		bottom_node.is_shooting = true
+	
 		
 
 		
