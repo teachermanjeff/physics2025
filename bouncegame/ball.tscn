@@ -10,7 +10,6 @@ bounce = 0.55
 
 [node name="ball" type="RigidBody2D" groups=["balls"]]
 physics_material_override = SubResource("PhysicsMaterial_x8fbi")
-gravity_scale = 0.6
 script = ExtResource("1_41u45")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
