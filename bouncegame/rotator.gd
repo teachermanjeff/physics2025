@@ -5,7 +5,7 @@ func _get_forward() -> Vector2:
 	var test = global_position.direction_to(get_global_mouse_position())
 	return test
 func _update_traj() -> void:
-	var velocity : Vector2 =  500 * _get_forward()
+	var velocity : Vector2 =  300 * _get_forward()
 	var line_start = global_position
 	var line_end: Vector2
 	var gravity: float = (ProjectSettings.get_setting("physics/2d/default_gravity"))
