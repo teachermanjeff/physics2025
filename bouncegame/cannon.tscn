@@ -4,11 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://7dpuq4dhmsye" path="res://Graphics/cannon.png" id="2_23j6s"]
 
 [node name="cannon" type="StaticBody2D"]
-rotation = 5.23599
 script = ExtResource("1_23j6s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, -2.5)
-rotation = 1.5708
+rotation = 2.13454
 scale = Vector2(0.234375, 0.210938)
 texture = ExtResource("2_23j6s")
