@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ctky1dg8ditll"]
+[gd_scene load_steps=10 format=3 uid="uid://ctky1dg8ditll"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
@@ -10,6 +10,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
 [node name="playtest" type="Node2D"]
 position = Vector2(-1, 0)
@@ -56,7 +58,7 @@ position = Vector2(-32, 201)
 position = Vector2(152, 469)
 
 [node name="normal_peg11" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(94, 276)
+position = Vector2(205, 262)
 
 [node name="normal_peg12" parent="." instance=ExtResource("1_qjlvb")]
 position = Vector2(-30, 453)
@@ -111,6 +113,24 @@ script = ExtResource("5_jbd3l")
 
 [node name="normal_peg23" parent="." instance=ExtResource("7_x201r")]
 position = Vector2(6, 141)
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(-198, 268)
+scale = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_x201r")
+action = "left"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2(205, 266)
+scale = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_x201r")
+action = "right"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="."]
+position = Vector2(24, 675)
+scale = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_x201r")
+action = "shoot"
 
 [connection signal="addpoint" from="normal_peg" to="cannon/HUD" method="_on_normal_peg_addpoint"]
 [connection signal="addpoint" from="normal_peg2" to="cannon/HUD" method="_on_normal_peg_addpoint"]
