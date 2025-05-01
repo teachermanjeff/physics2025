@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ctky1dg8ditll"]
+[gd_scene load_steps=11 format=3 uid="uid://ctky1dg8ditll"]
 
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="1_qjlvb"]
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="4_l4ynd"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="5_jbd3l"]
 [ext_resource type="PackedScene" uid="uid://b6ni4splladpr" path="res://block.tscn" id="7_x201r"]
+[ext_resource type="Texture2D" uid="uid://5dfqoksudxs2" path="res://Graphics/pegglebg.jpg" id="8_mao6o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
@@ -132,6 +133,12 @@ position = Vector2(4, 700)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
+
+[node name="bg" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(68.5, 452)
+scale = Vector2(3.51172, 4.8407)
+texture = ExtResource("8_mao6o")
 
 [connection signal="addpoint" from="normal_peg" to="cannon/HUD" method="_on_normal_peg_addpoint"]
 [connection signal="addpoint" from="normal_peg2" to="cannon/HUD" method="_on_normal_peg_addpoint"]
