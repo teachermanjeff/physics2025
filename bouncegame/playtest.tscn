@@ -14,6 +14,13 @@ size = Vector2(20, 972)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_x201r"]
+scenes/1/scene = ExtResource("1_qjlvb")
+scenes/2/scene = ExtResource("7_x201r")
+
+[sub_resource type="TileSet" id="TileSet_mao6o"]
+sources/0 = SubResource("TileSetScenesCollectionSource_x201r")
+
 [node name="playtest" type="Node2D"]
 position = Vector2(-1, 0)
 
@@ -28,72 +35,6 @@ stream = ExtResource("3_jbd3l")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(17, 412)
-
-[node name="normal_peg" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-131, 448)
-
-[node name="normal_peg2" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-115, 279)
-
-[node name="normal_peg3" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-37, 299)
-
-[node name="normal_peg4" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(31, 288)
-
-[node name="normal_peg5" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(90, 197)
-
-[node name="normal_peg6" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-1, 243)
-
-[node name="normal_peg7" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-57, 247)
-
-[node name="normal_peg8" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-102, 201)
-
-[node name="normal_peg9" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-32, 201)
-
-[node name="normal_peg10" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(152, 469)
-
-[node name="normal_peg11" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(205, 262)
-
-[node name="normal_peg12" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-30, 453)
-
-[node name="normal_peg13" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-154, 361)
-
-[node name="normal_peg14" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-81, 383)
-
-[node name="normal_peg15" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(157, 380)
-
-[node name="normal_peg16" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(150, 282)
-
-[node name="normal_peg17" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(8, 362)
-
-[node name="normal_peg18" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(-81, 522)
-
-[node name="normal_peg19" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(38, 518)
-
-[node name="normal_peg20" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(68, 459)
-
-[node name="normal_peg21" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(76, 371)
-
-[node name="normal_peg22" parent="." instance=ExtResource("1_qjlvb")]
-position = Vector2(164, 216)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
@@ -112,9 +53,6 @@ position = Vector2(-391, 882)
 
 [node name="rotator" type="Node2D" parent="."]
 script = ExtResource("5_jbd3l")
-
-[node name="normal_peg23" parent="." instance=ExtResource("7_x201r")]
-position = Vector2(6, 141)
 
 [node name="right button" type="TouchScreenButton" parent="."]
 position = Vector2(-198, 268)
@@ -139,24 +77,3 @@ z_index = -1
 position = Vector2(68.5, 452)
 scale = Vector2(3.51172, 4.8407)
 texture = ExtResource("8_mao6o")
-
-[connection signal="addpoint" from="normal_peg" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg2" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg3" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg4" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg5" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg6" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg7" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg8" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg9" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg10" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg12" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg13" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg14" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg15" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg16" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg17" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg18" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg19" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg20" to="cannon/HUD" method="_on_normal_peg_addpoint"]
-[connection signal="addpoint" from="normal_peg21" to="cannon/HUD" method="_on_normal_peg_addpoint"]
