@@ -1,23 +1,27 @@
+
 [gd_scene load_steps=12 format=4 uid="uid://ctky1dg8ditll"]
+
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="3_l4ynd"]
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="4_l4ynd"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="5_jbd3l"]
-[ext_resource type="Texture2D" uid="uid://dmr7p2cg2swxj" path="res://Graphics/ChatGPT Image May 1, 2025, 02_25_35 PM.png" id="6_x201r"]
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
+
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_mao6o"]
 scenes/1/scene = ExtResource("7_x201r")
 
 [sub_resource type="TileSet" id="TileSet_228x7"]
 sources/0 = SubResource("TileSetScenesCollectionSource_mao6o")
+
 
 [node name="playtest" type="Node2D"]
 position = Vector2(-1, 0)
@@ -70,6 +74,7 @@ scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
 
+
 [node name="bg" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(68.5, 452)
@@ -79,3 +84,4 @@ texture = ExtResource("6_x201r")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD4/wgAAAAAAAAAAQD7/wgAAAAAAAAAAQD+/wgAAAAAAAAAAQABAAgAAAAAAAAAAQAEAAgAAAAAAAAAAQAHAAgAAAAAAAAAAQAKAAgAAAAAAAAAAQAIAAoAAAAAAAAAAQAFAAoAAAAAAAAAAQACAAoAAAAAAAAAAQD//woAAAAAAAAAAQD8/woAAAAAAAAAAQD5/woAAAAAAAAAAQD1/wkAAAAAAAAAAQD2/wsAAAAAAAAAAQD3/w0AAAAAAAAAAQD4/w8AAAAAAAAAAQD5/xEAAAAAAAAAAQD6/xMAAAAAAAAAAQANAAkAAAAAAAAAAQAMAAsAAAAAAAAAAQALAA0AAAAAAAAAAQAKAA8AAAAAAAAAAQAJABIAAAAAAAAAAQAIABQAAAAAAAAAAQD7/xUAAAAAAAAAAQD8/xcAAAAAAAAAAQD9/xkAAAAAAAAAAQAHABYAAAAAAAAAAQAGABgAAAAAAAAAAQAFABoAAAAAAAAAAQACABoAAAAAAAAAAQAAABoAAAAAAAAAAQA=")
 tile_set = SubResource("TileSet_228x7")
+
