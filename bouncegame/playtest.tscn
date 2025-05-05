@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="3_l4ynd"]
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="4_l4ynd"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="5_jbd3l"]
+[ext_resource type="Texture2D" uid="uid://dmr7p2cg2swxj" path="res://Graphics/ChatGPT Image May 1, 2025, 02_25_35 PM.png" id="6_x201r"]
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
-[ext_resource type="Texture2D" uid="uid://5dfqoksudxs2" path="res://Graphics/pegglebg.jpg" id="8_mao6o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
@@ -74,7 +74,7 @@ action = "shoot"
 z_index = -1
 position = Vector2(68.5, 452)
 scale = Vector2(3.51172, 4.8407)
-texture = ExtResource("8_mao6o")
+texture = ExtResource("6_x201r")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD1/w4AAAAAAAAAAQD7/xEAAAAAAAAAAQAKABIAAAAAAAAAAQACABcAAAAAAAAAAQAIABoAAAAAAAAAAQD//xgAAAAAAAAAAQD9/x4AAAAAAAAAAQACACAAAAAAAAAAAQD3/x8AAAAAAAAAAQD3/xkAAAAAAAAAAQD+/xMAAAAAAAAAAQACABEAAAAAAAAAAQAIABYAAAAAAAAAAQAJABwAAAAAAAAAAQAGACEAAAAAAAAAAQALAB0AAAAAAAAAAQAJACMAAAAAAAAAAQACACQAAAAAAAAAAQD8/yMAAAAAAAAAAQD2/yIAAAAAAAAAAQADABsAAAAAAAAAAQACACMAAAAAAAAAAQAAACYAAAAAAAAAAQD+/yUAAAAAAAAAAQA=")
