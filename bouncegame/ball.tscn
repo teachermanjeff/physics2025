@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6vwkbbf2ka3r"]
 
 [ext_resource type="Script" uid="uid://hggnkbxgv2t2" path="res://ball.gd" id="1_41u45"]
-[ext_resource type="Texture2D" uid="uid://k2oyqqvuo3lg" path="res://icon.svg" id="1_x8fbi"]
+[ext_resource type="Texture2D" uid="uid://53phdx4y5hqk" path="res://pngs/tennis-ball.png" id="2_41u45"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x8fbi"]
 bounce = 0.55
@@ -16,6 +16,5 @@ script = ExtResource("1_41u45")
 shape = SubResource("CircleShape2D_41u45")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(4.76837e-07, 0.5)
-scale = Vector2(0.125, 0.132813)
-texture = ExtResource("1_x8fbi")
+scale = Vector2(0.0234005, 0.0243449)
+texture = ExtResource("2_41u45")
