@@ -1,5 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://ctky1dg8ditll"]
-
+[gd_scene load_steps=12 format=4 uid="uid://ctky1dg8ditll"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
@@ -14,13 +13,11 @@ size = Vector2(20, 972)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
-
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_mao6o"]
 scenes/1/scene = ExtResource("7_x201r")
 
 [sub_resource type="TileSet" id="TileSet_228x7"]
 sources/0 = SubResource("TileSetScenesCollectionSource_mao6o")
-
 
 [node name="playtest" type="Node2D"]
 position = Vector2(-1, 0)
@@ -73,14 +70,12 @@ scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
 
-
 [node name="bg" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(68.5, 452)
-scale = Vector2(3.51172, 4.8407)
+position = Vector2(97.5, 423)
+scale = Vector2(0.920898, 1.17969)
 texture = ExtResource("6_x201r")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD4/wgAAAAAAAAAAQD7/wgAAAAAAAAAAQD+/wgAAAAAAAAAAQABAAgAAAAAAAAAAQAEAAgAAAAAAAAAAQAHAAgAAAAAAAAAAQAKAAgAAAAAAAAAAQAIAAoAAAAAAAAAAQAFAAoAAAAAAAAAAQACAAoAAAAAAAAAAQD//woAAAAAAAAAAQD8/woAAAAAAAAAAQD5/woAAAAAAAAAAQD1/wkAAAAAAAAAAQD2/wsAAAAAAAAAAQD3/w0AAAAAAAAAAQD4/w8AAAAAAAAAAQD5/xEAAAAAAAAAAQD6/xMAAAAAAAAAAQANAAkAAAAAAAAAAQAMAAsAAAAAAAAAAQALAA0AAAAAAAAAAQAKAA8AAAAAAAAAAQAJABIAAAAAAAAAAQAIABQAAAAAAAAAAQD7/xUAAAAAAAAAAQD8/xcAAAAAAAAAAQD9/xkAAAAAAAAAAQAHABYAAAAAAAAAAQAGABgAAAAAAAAAAQACABoAAAAAAAAAAQAAABoAAAAAAAAAAQD+/xoAAAAAAAAAAQAEABoAAAAAAAAAAQAGABoAAAAAAAAAAQABABoAAAAAAAAAAQADABoAAAAAAAAAAQAFABoAAAAAAAAAAQD//xoAAAAAAAAAAQA=")
 tile_set = SubResource("TileSet_228x7")
-
