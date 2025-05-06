@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://bygva4ouhq8dp"]
+
+[ext_resource type="Script" uid="uid://bfi2lydmbwqyn" path="res://button.gd" id="1_e7qbk"]
+
+[node name="reset button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.894899, 0.264148)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 22.0
+offset_right = 93.0
+offset_bottom = 53.0
+scale = Vector2(3.15551, 6.02001)
+pivot_offset = Vector2(0.628141, -4.23387)
+text = "Reset"
+script = ExtResource("1_e7qbk")
+
+[connection signal="button_down" from="Button" to="Button" method="_on_button_down"]
