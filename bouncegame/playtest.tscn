@@ -1,12 +1,15 @@
-[gd_scene load_steps=12 format=4 uid="uid://ctky1dg8ditll"]
+[gd_scene load_steps=15 format=4 uid="uid://ctky1dg8ditll"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="3_l4ynd"]
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="4_l4ynd"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="5_jbd3l"]
-[ext_resource type="Texture2D" uid="uid://dmr7p2cg2swxj" path="res://Graphics/ChatGPT Image May 1, 2025, 02_25_35 PM.png" id="6_x201r"]
+[ext_resource type="Texture2D" uid="uid://mrr8s2bhhbe0" path="res://pngs/arrow button.png" id="6_m1mue"]
+[ext_resource type="Texture2D" uid="uid://5dfqoksudxs2" path="res://Graphics/pegglebg.jpg" id="6_x201r"]
+[ext_resource type="Texture2D" uid="uid://bxysxum0jknew" path="res://pngs/left arrow button.png" id="7_j05w3"]
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
+[ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
@@ -37,13 +40,13 @@ position = Vector2(17, 412)
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-320, 429)
+position = Vector2(-244, 435)
 shape = SubResource("RectangleShape2D_e2qus")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="StaticBody2D2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D2"]
-position = Vector2(364, 404)
+position = Vector2(274, 408)
 shape = SubResource("RectangleShape2D_e2qus")
 
 [node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
@@ -53,27 +56,46 @@ position = Vector2(-391, 882)
 script = ExtResource("5_jbd3l")
 
 [node name="right button" type="TouchScreenButton" parent="."]
-position = Vector2(-198, 268)
-scale = Vector2(20, 20)
-shape = SubResource("RectangleShape2D_x201r")
-action = "left"
-
-[node name="left button" type="TouchScreenButton" parent="."]
-position = Vector2(205, 266)
-scale = Vector2(20, 20)
+position = Vector2(210, 520)
+scale = Vector2(5.173, 2.5)
 shape = SubResource("RectangleShape2D_x201r")
 action = "right"
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="right button"]
+position = Vector2(-0.118421, 0.0816793)
+scale = Vector2(0.0206415, 0.0274532)
+texture = ExtResource("6_m1mue")
+
+[node name="left button" type="TouchScreenButton" parent="."]
+position = Vector2(-181, 520)
+scale = Vector2(5, 2.5)
+shape = SubResource("RectangleShape2D_x201r")
+action = "left"
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="left button"]
+position = Vector2(0.0249965, -0.0249982)
+scale = Vector2(0.0208854, 0.0277083)
+texture = ExtResource("7_j05w3")
 
 [node name="shoot button" type="TouchScreenButton" parent="."]
-position = Vector2(4, 700)
-scale = Vector2(20, 20)
+position = Vector2(227, 603)
+scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="shoot button"]
+position = Vector2(0.150002, 0.0499983)
+scale = Vector2(0.020625, 0.0280556)
+texture = ExtResource("8_nwo0d")
+metadata/_edit_group_ = true
 
 [node name="bg" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(97.5, 423)
-scale = Vector2(0.920898, 1.17969)
+position = Vector2(16.5, 398)
+scale = Vector2(2.10547, 4.47864)
 texture = ExtResource("6_x201r")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
