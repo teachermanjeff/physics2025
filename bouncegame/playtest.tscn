@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
-size = Vector2(20, 972)
+size = Vector2(22, 1112)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
@@ -40,13 +40,13 @@ position = Vector2(17, 412)
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-244, 435)
+position = Vector2(-371, 401)
 shape = SubResource("RectangleShape2D_e2qus")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="StaticBody2D2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2/StaticBody2D2"]
-position = Vector2(274, 408)
+position = Vector2(409, 478)
 shape = SubResource("RectangleShape2D_e2qus")
 
 [node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
@@ -94,8 +94,8 @@ metadata/_edit_group_ = true
 
 [node name="bg" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(16.5, 398)
-scale = Vector2(2.10547, 4.47864)
+position = Vector2(19, 398)
+scale = Vector2(3, 4.289)
 texture = ExtResource("6_x201r")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

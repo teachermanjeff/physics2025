@@ -4,13 +4,13 @@ signal addpoint
 @export var winning_peg_gen = 10
 var chosen_winning_peg = false
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$winning.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+
 	pass
 
 func _on_area_2d_body_entered(body):

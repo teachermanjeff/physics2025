@@ -25,9 +25,31 @@ offset_bottom = 65.0
 text = "Peg"
 
 [node name="winning_screen" type="Label" parent="."]
-offset_left = 61.0
-offset_top = 175.0
-offset_right = 502.0
-offset_bottom = 401.0
+offset_left = 46.0
+offset_top = 173.0
+offset_right = 487.0
+offset_bottom = 399.0
 theme_override_font_sizes/font_size = 100
 text = "YOU WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="losing_screen" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 173.0
+offset_right = 516.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 100
+text = "YOU LOSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="try_again" type="Button" parent="."]
+visible = false
+offset_left = 195.0
+offset_top = 406.0
+offset_right = 339.0
+offset_bottom = 484.0
+text = "try again?"
+
+[connection signal="pressed" from="try_again" to="." method="_on_try_again_pressed"]
