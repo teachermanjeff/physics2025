@@ -11,7 +11,7 @@ func _process(delta):
 	if lives <= 0 and lost == true:
 		$Timer.start()
 		lost = false
-	$Points.text = "Points: " + str(score)
+	$Points.text = "Points: " + str(globals.score)
 	$balls.text = "Balls " + str(lives)
 	$pegs.text = "pegs: " + str(winning_peg_left)
 	if winning_peg_left == 0:
@@ -20,8 +20,6 @@ func _process(delta):
 	else:
 		$winning_screen.visible = false
 		won = false
-func _on_normal_peg_addpoint() -> void:
-	score = score + 100
 
 
 func _on_try_again_pressed() -> void:
