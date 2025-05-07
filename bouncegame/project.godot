@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="jiggle physics the game"
+config/name="pegglar"
+run/main_scene="uid://d16c4pl587n6h"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://cws0soq0unt6n"
 
 [autoload]
 
