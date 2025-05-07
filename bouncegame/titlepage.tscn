@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d16c4pl587n6h"]
+
+[ext_resource type="Texture2D" uid="uid://cws0soq0unt6n" path="res://ChatGPT Image May 7, 2025, 01_26_06 PM.png" id="1_8fv3n"]
+[ext_resource type="Script" uid="uid://qt0nv1rwp56h" path="res://playbutton.gd" id="2_o1ti6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(370.5, 461)
+scale = Vector2(0.772461, 0.981445)
+texture = ExtResource("1_8fv3n")
+
+[node name="PLAYBUTTON" type="Button" parent="."]
+offset_left = 104.0
+offset_top = 735.0
+offset_right = 308.0
+offset_bottom = 864.0
+theme_override_font_sizes/font_size = 38
+text = "PLAY NOW "
+script = ExtResource("2_o1ti6")
+
+[connection signal="pressed" from="PLAYBUTTON" to="PLAYBUTTON" method="_on_pressed"]
