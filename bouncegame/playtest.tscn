@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://ctky1dg8ditll"]
+[gd_scene load_steps=17 format=4 uid="uid://ctky1dg8ditll"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
 [ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
 [ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="11_j05w3"]
+[ext_resource type="AudioStream" uid="uid://c52jaqgvdivl5" path="res://sounds/ezyZip.mp3" id="12_nwo0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(22, 1112)
@@ -34,6 +35,7 @@ scale = Vector2(0.6, 0.6)
 
 [node name="cannonsound" type="AudioStreamPlayer" parent="cannon"]
 stream = ExtResource("3_jbd3l")
+volume_db = 24.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(17, 412)
@@ -109,3 +111,9 @@ pivot_offset = Vector2(315, 108)
 
 [node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
 position = Vector2(-385, 899)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_nwo0d")
+volume_db = -17.135
+autoplay = true
+parameters/looping = true
