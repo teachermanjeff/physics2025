@@ -2,11 +2,9 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-<<<<<<< Updated upstream
-uid="uid://c52jaqgvdivl5"
-=======
-uid="uid://sfvyk5rqda7v"
->>>>>>> Stashed changes
+
+uid="uid://b53ocgvlafeb5"
+
 path="res://.godot/imported/ezyZip.mp3-cdafd7381bb2993484a31072092d3724.mp3str"
 
 [deps]

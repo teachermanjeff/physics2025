@@ -2,4 +2,4 @@ extends Button
 
 
 func _on_button_down() -> void:
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_file("res://titlepage.tscn")

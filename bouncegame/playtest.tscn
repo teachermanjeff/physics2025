@@ -1,8 +1,8 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=17 format=4 uid="uid://ctky1dg8ditll"]
-=======
-[gd_scene load_steps=15 format=4 uid="uid://ctky1dg8ditll"]
->>>>>>> Stashed changes
+
+[gd_scene load_steps=16 format=4 uid="uid://cpr3h1fd68n2l"]
+
+
+
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
@@ -13,12 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://bxysxum0jknew" path="res://pngs/left arrow button.png" id="7_j05w3"]
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
 [ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
-<<<<<<< Updated upstream
 
-[ext_resource type="PackedScene" path="res://resetmidgame.tscn" id="11_j05w3"]
-=======
 [ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="11_j05w3"]
->>>>>>> Stashed changes
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(22, 1112)
