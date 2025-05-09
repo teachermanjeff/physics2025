@@ -6,38 +6,17 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
-position = Vector2(333.5, 480.928)
-scale = Vector2(0.647461, 0.929828)
+position = Vector2(370.5, 461)
+scale = Vector2(0.772461, 0.981445)
 texture = ExtResource("1_8fv3n")
 
 [node name="PLAYBUTTON" type="Button" parent="."]
-offset_left = 254.0
-offset_top = 404.0
-offset_right = 458.0
-offset_bottom = 533.0
+offset_left = 104.0
+offset_top = 735.0
+offset_right = 308.0
+offset_bottom = 864.0
 theme_override_font_sizes/font_size = 38
-text = "level 1"
+text = "PLAY NOW "
 script = ExtResource("2_o1ti6")
-metadata/_edit_use_anchors_ = true
-
-[node name="PLAYBUTTON2" type="Button" parent="."]
-offset_left = 248.0
-offset_top = 547.0
-offset_right = 452.0
-offset_bottom = 676.0
-theme_override_font_sizes/font_size = 38
-text = "level 2"
-metadata/_edit_use_anchors_ = true
-
-[node name="PLAYBUTTON3" type="Button" parent="."]
-offset_left = 255.0
-offset_top = 687.0
-offset_right = 459.0
-offset_bottom = 816.0
-theme_override_font_sizes/font_size = 38
-text = "level 3"
-metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="PLAYBUTTON" to="PLAYBUTTON" method="_on_pressed"]
-[connection signal="pressed" from="PLAYBUTTON2" to="PLAYBUTTON" method="_on_playbutton_2_pressed"]
-[connection signal="pressed" from="PLAYBUTTON3" to="PLAYBUTTON" method="_on_playbutton_3_pressed"]
