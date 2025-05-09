@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://cpr3h1fd68n2l"]
+[gd_scene load_steps=16 format=4 uid="uid://bv04lk5tovlqc"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
@@ -101,10 +101,10 @@ tile_map_data = PackedByteArray("AAAIAAYAAAAAAAAAAQAFAAYAAAAAAAAAAQACAAYAAAAAAAA
 tile_set = SubResource("TileSet_228x7")
 
 [node name="Control" parent="." instance=ExtResource("11_j05w3")]
-offset_left = 72.0
-offset_top = -158.0
-offset_right = 72.0
-offset_bottom = -158.0
+offset_left = 14.0
+offset_top = -156.0
+offset_right = 14.0
+offset_bottom = -156.0
 pivot_offset = Vector2(315, 108)
 
 [node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
