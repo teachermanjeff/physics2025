@@ -8,6 +8,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpu75"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kfwk7"]
+bounce = 0.15
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_vybfs"]
 
 [node name="normal_peg" type="Node2D"]
@@ -21,12 +24,13 @@ texture = ExtResource("2_jc5c8")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(0.99, 0.99)
+scale = Vector2(1.01, 1.01)
 shape = SubResource("CircleShape2D_rpu75")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_kfwk7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("CircleShape2D_vybfs")
