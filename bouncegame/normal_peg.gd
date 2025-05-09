@@ -27,7 +27,7 @@ func _on_timer_timeout():
 			peg_left.winning_peg_left -= 1
 func _on_winning_hidden() -> void: # changing the normal peg 
 	var peg_left = get_node("/root/playtest/cannon/HUD") 
-	if randi_range(1,5) == 2:
+	if randi_range(1,8) == 2:
 		$winning.visible = true
 		$normal.visible = false
 		chosen_winning_peg = true
