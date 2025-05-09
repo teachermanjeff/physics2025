@@ -5,7 +5,7 @@ var aim_pos: Vector2
 
 
 var projectile = preload("res://ball.tscn")
-func _process(delta):
+func _process(_delta):
 	var HUD_node = get_node("HUD")
 	y_aim = (sqrt(1000000-(globals.x_aim)**2))
 	aim_pos = Vector2(globals.x_aim,y_aim) 

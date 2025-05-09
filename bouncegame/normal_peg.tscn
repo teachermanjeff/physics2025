@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh4nvugrkegbn"]
+[gd_scene load_steps=8 format=3 uid="uid://dh4nvugrkegbn"]
 
 [ext_resource type="Script" uid="uid://c27jjqfca5pes" path="res://normal_peg.gd" id="1_mlfcl"]
 [ext_resource type="Texture2D" uid="uid://ls1hr0toxf4b" path="res://Graphics/blue man peg.png" id="2_jc5c8"]
+[ext_resource type="AudioStream" uid="uid://c8364nbrou3m1" path="res://sounds/peghit_low.ogg" id="3_8js2i"]
 [ext_resource type="Texture2D" uid="uid://dyvlxdqbcxpdy" path="res://Graphics/winning peg .png" id="3_kfwk7"]
+[ext_resource type="AudioStream" uid="uid://h6dl37kx6p7d" path="res://sounds/pop-cartoon-328167.mp3" id="5_e55ek"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpu75"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kfwk7"]
+bounce = 0.15
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vybfs"]
 
@@ -19,12 +24,13 @@ texture = ExtResource("2_jc5c8")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(0.99, 0.99)
+scale = Vector2(1.01, 1.01)
 shape = SubResource("CircleShape2D_rpu75")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_kfwk7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("CircleShape2D_vybfs")
@@ -33,6 +39,14 @@ shape = SubResource("CircleShape2D_vybfs")
 position = Vector2(6.85453e-07, -1.5)
 scale = Vector2(0.22, 0.23)
 texture = ExtResource("3_kfwk7")
+
+[node name="pop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_e55ek")
+autoplay = true
+
+[node name="normalpeghit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_8js2i")
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
