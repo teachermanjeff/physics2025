@@ -13,8 +13,8 @@ size = Vector2(20, 972)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
-[node name="playest" type="Node2D"]
-position = Vector2(-1, 0)
+[node name="playtest" type="Node2D"]
+position = Vector2(286, 89)
 
 [node name="cannon" parent="." instance=ExtResource("1_i2041")]
 position = Vector2(2, 1)
@@ -41,6 +41,7 @@ shape = SubResource("RectangleShape2D_e2qus")
 position = Vector2(-391, 882)
 
 [node name="rotator" type="Node2D" parent="."]
+position = Vector2(-132, 3)
 script = ExtResource("6_hx44q")
 
 [node name="block1" parent="." instance=ExtResource("7_n8vhr")]
@@ -104,19 +105,19 @@ rotation = 0.493928
 scale = Vector2(1, 0.5)
 
 [node name="right button" type="TouchScreenButton" parent="."]
-position = Vector2(-569, 222)
+position = Vector2(-199, 642)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "left"
 
 [node name="left button" type="TouchScreenButton" parent="."]
-position = Vector2(675, 201)
+position = Vector2(204, 645)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "right"
 
 [node name="shoot button" type="TouchScreenButton" parent="."]
-position = Vector2(-84, 1112)
+position = Vector2(225, 1050)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
