@@ -1,5 +1,5 @@
-[gd_scene load_steps=16 format=4 uid="uid://bv04lk5tovlqc"]
 
+[gd_scene load_steps=16 format=4 uid="uid://bv04lk5tovlqc"]
 
 
 
@@ -13,7 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
 [ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
 
-[ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="11_j05w3"]
+
+[ext_resource type="PackedScene" path="res://resetmidgame.tscn" id="11_j05w3"]
 
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]

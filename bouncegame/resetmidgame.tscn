@@ -19,7 +19,7 @@ offset_right = 93.0
 offset_bottom = 53.0
 scale = Vector2(3.15551, 6.02001)
 pivot_offset = Vector2(0.628141, -4.23387)
-text = "home page"
+text = "Reset"
 script = ExtResource("1_e7qbk")
 
 [connection signal="button_down" from="Button" to="Button" method="_on_button_down"]
