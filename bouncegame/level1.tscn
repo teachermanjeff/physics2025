@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bl4kkrk4656jg"]
+[gd_scene load_steps=10 format=3 uid="uid://bl4kkrk4656jg"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="1_i2041"]
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="2_xy4tn"]
@@ -7,8 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="5_mx85b"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="6_hx44q"]
 [ext_resource type="PackedScene" uid="uid://b6ni4splladpr" path="res://block.tscn" id="7_n8vhr"]
-[ext_resource type="Texture2D" uid="uid://5dfqoksudxs2" path="res://Graphics/pegglebg.jpg" id="8_usj0q"]
-[ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="9_5j5gb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
@@ -185,16 +183,3 @@ position = Vector2(176, 101)
 
 [node name="normal_peg21" parent="." instance=ExtResource("4_5j5gb")]
 position = Vector2(239, 176)
-
-[node name="bg" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(19, 406.625)
-scale = Vector2(3, 4.58023)
-texture = ExtResource("8_usj0q")
-
-[node name="Control" parent="." instance=ExtResource("9_5j5gb")]
-offset_left = -3.0
-offset_top = -169.0
-offset_right = -3.0
-offset_bottom = -169.0
-pivot_offset = Vector2(315, 108)
