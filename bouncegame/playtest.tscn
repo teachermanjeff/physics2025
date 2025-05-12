@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=17 format=4 uid="uid://ctky1dg8ditll"]
-=======
-[gd_scene load_steps=15 format=4 uid="uid://ctky1dg8ditll"]
->>>>>>> Stashed changes
+[gd_scene load_steps=16 format=4 uid="uid://tsfd7wywlgv7"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="3_2iy5o"]
 [ext_resource type="AudioStream" uid="uid://b0nuod5oydjfv" path="res://sounds/canonfire.wav" id="3_jbd3l"]
@@ -13,12 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://bxysxum0jknew" path="res://pngs/left arrow button.png" id="7_j05w3"]
 [ext_resource type="PackedScene" uid="uid://dh4nvugrkegbn" path="res://normal_peg.tscn" id="7_x201r"]
 [ext_resource type="Texture2D" uid="uid://b1af52rrr7pi8" path="res://pngs/shoot button.png" id="8_nwo0d"]
-<<<<<<< Updated upstream
-
-[ext_resource type="PackedScene" path="res://resetmidgame.tscn" id="11_j05w3"]
-=======
 [ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="11_j05w3"]
->>>>>>> Stashed changes
+[ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="11_nwo0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(22, 1112)
@@ -110,17 +102,11 @@ tile_map_data = PackedByteArray("AAAIAAYAAAAAAAAAAQAFAAYAAAAAAAAAAQACAAYAAAAAAAA
 tile_set = SubResource("TileSet_228x7")
 
 [node name="Control" parent="." instance=ExtResource("11_j05w3")]
-offset_left = 72.0
-offset_top = -158.0
-offset_right = 72.0
-offset_bottom = -158.0
+offset_left = 52.0
+offset_top = -131.0
+offset_right = 52.0
+offset_bottom = -131.0
 pivot_offset = Vector2(315, 108)
 
-[node name="bottom" parent="." instance=ExtResource("4_l4ynd")]
+[node name="bottom" parent="." instance=ExtResource("11_nwo0d")]
 position = Vector2(-385, 899)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_nwo0d")
-volume_db = -17.135
-autoplay = true
-parameters/looping = true

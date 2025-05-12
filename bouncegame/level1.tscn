@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bl4kkrk4656jg"]
+[gd_scene load_steps=12 format=3 uid="uid://bl4kkrk4656jg"]
 
 [ext_resource type="PackedScene" uid="uid://cl0wmqo673iiy" path="res://cannon.tscn" id="1_i2041"]
 [ext_resource type="PackedScene" uid="uid://dmn7jrij4glg6" path="res://hud.tscn" id="2_xy4tn"]
@@ -7,14 +7,16 @@
 [ext_resource type="PackedScene" uid="uid://c8avvf011ar03" path="res://bottom.tscn" id="5_mx85b"]
 [ext_resource type="Script" uid="uid://c5vhdgmrnjhee" path="res://rotator.gd" id="6_hx44q"]
 [ext_resource type="PackedScene" uid="uid://b6ni4splladpr" path="res://block.tscn" id="7_n8vhr"]
+[ext_resource type="Texture2D" uid="uid://5dfqoksudxs2" path="res://Graphics/pegglebg.jpg" id="8_usj0q"]
+[ext_resource type="PackedScene" uid="uid://bygva4ouhq8dp" path="res://resetmidgame.tscn" id="9_5j5gb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2qus"]
 size = Vector2(20, 972)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x201r"]
 
-[node name="playest" type="Node2D"]
-position = Vector2(-1, 0)
+[node name="playtest" type="Node2D"]
+position = Vector2(286, 89)
 
 [node name="cannon" parent="." instance=ExtResource("1_i2041")]
 position = Vector2(2, 1)
@@ -41,6 +43,7 @@ shape = SubResource("RectangleShape2D_e2qus")
 position = Vector2(-391, 882)
 
 [node name="rotator" type="Node2D" parent="."]
+position = Vector2(-132, 3)
 script = ExtResource("6_hx44q")
 
 [node name="block1" parent="." instance=ExtResource("7_n8vhr")]
@@ -104,19 +107,19 @@ rotation = 0.493928
 scale = Vector2(1, 0.5)
 
 [node name="right button" type="TouchScreenButton" parent="."]
-position = Vector2(-569, 222)
+position = Vector2(-199, 642)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "left"
 
 [node name="left button" type="TouchScreenButton" parent="."]
-position = Vector2(675, 201)
+position = Vector2(204, 645)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "right"
 
 [node name="shoot button" type="TouchScreenButton" parent="."]
-position = Vector2(-84, 1112)
+position = Vector2(225, 1050)
 scale = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_x201r")
 action = "shoot"
@@ -183,3 +186,16 @@ position = Vector2(176, 101)
 
 [node name="normal_peg21" parent="." instance=ExtResource("4_5j5gb")]
 position = Vector2(239, 176)
+
+[node name="bg" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(19, 406.625)
+scale = Vector2(3, 4.58023)
+texture = ExtResource("8_usj0q")
+
+[node name="Control" parent="." instance=ExtResource("9_5j5gb")]
+offset_left = 114.0
+offset_top = -140.0
+offset_right = 114.0
+offset_bottom = -140.0
+pivot_offset = Vector2(315, 108)

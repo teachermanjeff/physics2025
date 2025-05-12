@@ -13,13 +13,13 @@ scale = Vector2(0.894899, 0.264148)
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 45.0
-offset_top = 22.0
-offset_right = 93.0
-offset_bottom = 53.0
-scale = Vector2(3.15551, 6.02001)
+offset_left = 3.35234
+offset_top = -34.0718
+offset_right = 97.3523
+offset_bottom = -3.07181
+scale = Vector2(2, 6)
 pivot_offset = Vector2(0.628141, -4.23387)
-text = "Reset"
+text = "home page"
 script = ExtResource("1_e7qbk")
 
 [connection signal="button_down" from="Button" to="Button" method="_on_button_down"]

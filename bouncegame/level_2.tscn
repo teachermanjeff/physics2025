@@ -97,10 +97,10 @@ scale = Vector2(0.8, 1.222)
 texture = ExtResource("8_jcnlr")
 
 [node name="Control" parent="." instance=ExtResource("10_i558w")]
-offset_left = 72.0
-offset_top = -158.0
-offset_right = 72.0
-offset_bottom = -158.0
+offset_left = 69.0
+offset_top = -123.0
+offset_right = 69.0
+offset_bottom = -123.0
 pivot_offset = Vector2(315, 108)
 
 [node name="bottom" parent="." instance=ExtResource("11_cuxq2")]
